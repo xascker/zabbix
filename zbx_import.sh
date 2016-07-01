@@ -10,11 +10,12 @@
 
 
 
-result=$(diff newversion version)
+if result="$(diff newversion version)"
+  then
+    echo "Files are the sames"
+  else
+    echo "Files are differents"
+    echo "$result"
+  fi
 
-if [ $? -eq 0]; then
-echo "files are the same"
-else
-echo "files are different"
-echo "$result"
-fi
+
