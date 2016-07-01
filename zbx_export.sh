@@ -8,6 +8,6 @@ then
     git commit -m "Export templates from $(date '+%b %d, %Y')"
     git push origin master
 else
-    echo "Backup file does not exists!"
+    echo "Export file does not exists!"
     exit 1
 fi
