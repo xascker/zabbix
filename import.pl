@@ -9,7 +9,7 @@ use File::Slurp;
 my $url      = 'http://localhost/zabbix/api_jsonrpc.php'; # URL to Zabbix
 my $userid   = "Admin";                                   # Zabbix API User ID
 my $password = "zabbix";                                  # Zabbix API User Password
-my $destFile  = "./zbx_export_templates";
+my $destFile  = "./templates";
 
 my $client = new JSON::RPC::Legacy::Client;
 
